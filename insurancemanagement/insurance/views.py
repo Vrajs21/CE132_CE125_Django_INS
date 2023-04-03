@@ -262,7 +262,7 @@ def contactus_view(request):
             email = sub.cleaned_data['Email']
             name=sub.cleaned_data['Name']
             message = sub.cleaned_data['Message']
-            send_mail(name,message,email,["21ceuof071@ddu.ac.in"], fail_silently = False)
+            send_mail(name,message,email,["vrajs2103@gmail.com"], fail_silently = False)
             return render(request, 'insurance/contactussuccess.html')
     return render(request, 'insurance/contactus.html', {'form':sub})
 
